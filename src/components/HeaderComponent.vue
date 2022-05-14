@@ -5,16 +5,11 @@
         LOGO
         </div>
       <ul>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
-        <li><a href="#">link</a></li>
+        <li v-for="(item,index) in menu" :key="`menu_${index}`">
+          <a href="item.href">
+            {{item.name}}
+          </a>
+        </li>
       </ul>
     </div>
   </header>
@@ -22,7 +17,54 @@
 
 <script>
 export default {
-  name: 'HeaderComponent'
+  name: 'HeaderComponent',
+  data(){
+    return{
+      menu:[
+        {
+          href: '#',
+          name: 'characters'
+        },
+        {
+          href: '#',
+          name: 'comics'
+        },
+        {
+          href: '#',
+          name: 'movies'
+        },
+        {
+          href: '#',
+          name: 'tv'
+        },
+        {
+          href: '#',
+          name: 'games'
+        },
+        {
+          href: '#',
+          name: 'collectibles'
+        },
+        {
+          href: '#',
+          name: 'videos'
+        },
+        {
+          href: '#',
+          name: 'fans'
+        },
+        {
+          href: '#',
+          name: 'news'
+        },
+        {
+          href: '#',
+          name: 'shop'
+        },
+      ]
+      
+    }
+  }
 }
 </script>
 
@@ -33,6 +75,7 @@ export default {
 
 header .container{
   @include d-flex-jc-ac;
+  height: 80px;
 
   ul {
     @include d-flex-jc-ac;
@@ -44,6 +87,9 @@ header .container{
       a {
         margin: 10px;
         text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
       }
     }
 
