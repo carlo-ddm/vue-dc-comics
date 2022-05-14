@@ -1,6 +1,8 @@
 <template>
   <main>
-    Main
+    <div class="container">
+      Main
+    </div>
   </main>
 </template>
 
@@ -10,6 +12,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scope>
 
 </style>

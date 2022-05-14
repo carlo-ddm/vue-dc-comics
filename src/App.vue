@@ -12,6 +12,7 @@ import MainComponent from './components/MainComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 
 
+
 export default {
   name: 'App',
   components: {
@@ -23,5 +24,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import './assets/styles/vars';
+@import './assets/styles/general';
+@import './assets/styles/utilities';
+
+
 
 </style>
