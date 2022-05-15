@@ -1,14 +1,22 @@
 <template>
   <main>
     <div class="container">
-      Main
+      <ContentComponent />
+      <IconsItems />
     </div>
   </main>
 </template>
 
 <script>
+import ContentComponent from './ContentComponent.vue';
+import IconsItems from './IconsItems.vue'
+
 export default {
-  name: 'MainComponent'
+  name: 'MainComponent',
+  components: {
+    ContentComponent,
+    IconsItems,
+  }
 }
 </script>
 
