@@ -1,11 +1,13 @@
 <template>
   <div class="icon-items" >
+    <div class="container">
     <ul>
       <li v-for="(icon,index) in icons" :key="`icons_${index}`" >
         <img src="../assets/img/buy-comics-digital-comics.png" :alt="icon.iconTitle">
         <span>{{icon.iconTitle}}</span>
       </li>
     </ul>
+    </div>
   </div>
 </template>
 
@@ -47,9 +49,9 @@ export default {
 @import '../assets/styles/vars';
 
 .icon-items {
+  background-color: $colorePrimario;
   ul {
     @include d-flex-jc-ac;
-    background-color: $colorePrimario;
     height: 90px;
     li {
       @include d-flex-jc-ac;

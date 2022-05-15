@@ -1,6 +1,5 @@
 <template>
-  <div class="content"> 
-    --> Qui i contenuti
+  <div class="content">
   </div>
 </template>
 

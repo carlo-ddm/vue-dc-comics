@@ -1,14 +1,16 @@
 <template>
   <div id="app">
-    <HeaderComponent />
-    <MainComponent />
-    <FooterComponent />
+    <header-component />
+    <main-component />
+    <icons-items />
+    <footer-component />
   </div>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
 import MainComponent from './components/MainComponent.vue';
+import IconsItems from './components/IconsItems.vue';
 import FooterComponent from './components/FooterComponent.vue';
 
 
@@ -18,6 +20,7 @@ export default {
   components: {
    HeaderComponent,
    MainComponent,
+   IconsItems,
    FooterComponent,
   }
 }
