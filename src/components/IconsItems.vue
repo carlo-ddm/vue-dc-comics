@@ -3,7 +3,7 @@
     <div class="container">
     <ul>
       <li v-for="(icon,index) in icons" :key="`icons_${index}`" >
-        <img src="../assets/img/buy-comics-digital-comics.png" :alt="icon.iconTitle">
+        <img :src="`${icon.src}`" :alt="icon.iconTitle">
         <span>{{icon.iconTitle}}</span>
       </li>
     </ul>
@@ -12,29 +12,35 @@
 </template>
 
 <script>
+import one from '../assets/img/buy-comics-digital-comics.png';
+import two from '../assets/img/buy-comics-merchandise.png';
+import three from '../assets/img/buy-comics-subscriptions.png';
+import four from '../assets/img/buy-comics-shop-locator.png';
+import five from '../assets/img/buy-dc-power-visa.svg';
+
 export default {
   name: 'IconsItems',
   data(){
     return {
       icons: [
         {
-          imag: 'buy-comics-digital-comics.png',
+          src: one,
           iconTitle: 'digital comics'
         },
          {
-          imag: 'buy-comics-merchandise.png',
+          src: two,
           iconTitle: 'dc merchandis'
         },
          {
-          imag: 'buy-comics-subscriptions.png',
+          src: three,
           iconTitle: 'subscription'
         },
          {
-          imag: 'buy-comics-shop-locator.png',
+          src: four,
           iconTitle: 'comic shop locator'
         },
          {
-          imag: 'buy-dc-power-visa.svg',
+          src: five,
           iconTitle: 'dc power visa'
         }
       ]
