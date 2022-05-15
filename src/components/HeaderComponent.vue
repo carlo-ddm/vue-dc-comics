@@ -1,9 +1,7 @@
 <template>
   <header>
     <div class="container">
-        <div>
-        LOGO
-        </div>
+      <img src="../assets/img/dc-logo.png" alt="dc_logo">
       <ul>
         <li v-for="(item,index) in menu" :key="`menu_${index}`">
           <a href="item.href">
@@ -23,43 +21,53 @@ export default {
       menu:[
         {
           href: '#',
-          name: 'characters'
+          name: 'characters',
+          active: false
         },
         {
           href: '#',
-          name: 'comics'
+          name: 'comics',
+          active: true
         },
         {
           href: '#',
-          name: 'movies'
+          name: 'movies',
+          active: false
         },
         {
           href: '#',
-          name: 'tv'
+          name: 'tv',
+          active: false
         },
         {
           href: '#',
-          name: 'games'
+          name: 'games',
+          active: false
         },
         {
           href: '#',
-          name: 'collectibles'
+          name: 'collectibles',
+          active: false
         },
         {
           href: '#',
-          name: 'videos'
+          name: 'videos',
+          active: false
         },
         {
           href: '#',
-          name: 'fans'
+          name: 'fans',
+          active: false
         },
         {
           href: '#',
-          name: 'news'
+          name: 'news',
+          active: false
         },
         {
           href: '#',
-          name: 'shop'
+          name: 'shop',
+          active: false
         },
       ]
       
@@ -75,7 +83,12 @@ export default {
 
 header .container{
   @include d-flex-jc-ac;
-  height: 80px;
+  height: 100px;
+
+  img {
+    margin: 0 10px;
+    width: 70px;
+  }
 
   ul {
     @include d-flex-jc-ac;
@@ -85,11 +98,12 @@ header .container{
       list-style: none;
 
       a {
-        margin: 10px;
+        margin: 0 10px;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 12px;
         font-weight: bold;
+        color: #363636;
       }
     }
 
