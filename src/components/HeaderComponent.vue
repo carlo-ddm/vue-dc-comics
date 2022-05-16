@@ -82,7 +82,7 @@ export default {
 
 header .container {
   @include d-flex-jc-ac;
-  height: 100px;
+  height: 12vh;
 
   img {
     margin: 0 10px;

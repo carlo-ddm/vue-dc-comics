@@ -13,7 +13,7 @@ export default {
 
 
 .content{
-  height: 90px;
+  height: 12vh;
   background-color: black;
   color: white;
 }
