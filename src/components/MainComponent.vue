@@ -1,8 +1,6 @@
 <template>
   <main>
-    <div class="container">
-      <ContentComponent />
-    </div>
+    <ContentComponent />
   </main>
 </template>
 

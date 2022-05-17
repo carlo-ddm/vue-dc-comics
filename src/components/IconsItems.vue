@@ -57,7 +57,7 @@ export default {
 .icon-items {
   @include d-flex-jc-ac;
   background-color: $colorePrimario;
-  height: 15vh;
+  height: 110px;
   ul {
     @include d-flex-jc-ac;
     height: 90px;

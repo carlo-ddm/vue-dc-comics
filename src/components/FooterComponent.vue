@@ -76,6 +76,7 @@ export default {
   name: "FooterComponent",
   data() {
     return {
+
       linksDcComics: [
         {
           name: "caracters",
@@ -235,7 +236,7 @@ h2 {
   @include d-flex-jc-ac;
   color: white;
   padding: 0 10px;
-  height: 49vh;
+  height: 400px;
 
   .left {
     @include d-flex-jc-ac;
@@ -256,8 +257,9 @@ h2 {
   .right {
     @include dcImg;
     @include l-r-footer;
+    overflow: hidden;
     img {
-      width: 600px;
+      width: 100%;
     }
   }
 }
@@ -265,7 +267,7 @@ h2 {
 .bottom {
   @include d-flex-jc-ac;
   width: 100%;
-  height: 12vh;
+  height: 100px;
   background-color: #242424;
   .container {
     @include d-flex-jc-ac;
